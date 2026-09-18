@@ -6,6 +6,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/340a5b3b98.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -14,9 +15,26 @@
                 <img class="logo" src="./assets/assets/Library.svg" alt="">
                 <ul class="nav__links">
                     <li><a href="#" class="nav__link">Home</a></li>
-                    <li><a href="#" class="nav__link">Contact</a></li>
-                    <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+                    <li><a href="#" class="nav__link no-cursor">Contact</a></li>
+                    <li><a href="#features" class="nav__link nav__link--primary">Books</a></li>
                 </ul> 
+            
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list no-cursor"><a href="#" class="menu__link" onclick="closeMenu()">Contacts</a>
+                    </li>
+                </ul>
+             </div>
             </div>
         </nav>
         <header>
@@ -26,7 +44,9 @@
                     <h2>
                         Find your dream book with <span class="purple">Library</span>
                     </h2>
+                    <a href="#features">
                     <button class="btn">Browse books</button>
+                  </a>
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="./assets/assets/Undraw_Books.svg" alt="Book png">
@@ -169,7 +189,7 @@
       <div class="container">
         <div class="row">
           <h2 class="section__title">
-            Featured <span class="purple">Books</span>
+            Recent <span class="purple">Books</span>
           </h2>
           <div class="books">
             <div class="book">
@@ -349,7 +369,7 @@
                 <a href="" class="footer__link">Books</a>
                 <a href="" class="footer__link no-cursor">Contact</a>
             </div>
-            <div class="footer__copyright">Copyright &copy; 2026 Library. All rights reserved.</div>
+            <div class="footer__copyright">Copyright &copy 2026 Library. All rights reserved.</div>
             </div>
             </div>
         </div>
